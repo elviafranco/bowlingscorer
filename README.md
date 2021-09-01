@@ -16,7 +16,7 @@ https://www.figma.com/file/4WiXktnbEwFTWqlbWLdnre/StrongMind-UX-Challenge-Bowlin
 ## Motivation
 This challenge was a great opportunity to practice wireframing, prototyping and interface development. 
 
-# Key Topics & Tech Used
+## Key Topics & Tech Used
 * JavaScript
 * jQuery
 * Bootstrap v5.1
