@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'chaneyultra_extended';
+    src: url('chaney-ultraextended-webfont.eot');
+    src: url('chaney-ultraextended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chaney-ultraextended-webfont.woff2') format('woff2'),
+         url('chaney-ultraextended-webfont.woff') format('woff'),
+         url('chaney-ultraextended-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    min-height:100%;
+    background:linear-gradient(0deg, rgba(28, 26, 38, 0.7), rgba(28, 26, 38, 0.7)), url('jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
+    background-size:cover;
+    color: #04FFEF;
+    text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.form-select {
+    background-color: transparent;
+    color: #04FFEF;
+    border: 1px solid #04FFEF;
+    padding: 1em;
+    margin: 0;
+    /* width: 50%; */
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.table {
+    border-radius: 15px;
+    background-color: #221F2E;
+    color:#04FFEF;
+    border-color: #474451;
+}
+
+thead {
+    background-color: #5100FF;
+    color: #04FFEF;
+    text-align: center;
+}
+
+h1, #total {
+    font-family: 'chaneyultra_extended';
+    color: #DDFF00;
+}
+
+h2 {
+    font-family: 'chaneyultra_extended';
+    color: #04FFEF;
+}
+
+i {
+    color: #DDFF00;
+}
+
+#scoreTotal {
+    font-family: 'chaneyultra_extended';
+    color: #DDFF00;
+    float: right;
+}
+
+
