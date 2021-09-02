@@ -33,450 +33,480 @@
     <title>UX Challenge - Bowling Scorer</title>
   </head>
   <body>
-    <div class="container">
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="h1"><i class="fas fa-planet-ringed"></i> Cosmic Bowling</h1>
-        <h2 class="h2">Score Tracker <i class="fas fa-bowling-ball"></i></h2>
+    <main>
+      <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
+          <h1>
+            <i class="fas fa-planet-ringed"></i>
+            Cosmic Bowling
+            <small class="text-muted">Score Tracker</small>
+          </h1>
+          <div class="col-lg-6 mx-auto">
+            <!-- <img src="./assets/images/spacegreeting.png" class="img-fluid" alt="..."> -->
+            <p class="lead mb-4">
+              Never forget the score again! If you knocked down all 10 pins in
+              the first swing, you get a strike! If you knock down all 10 pins
+              using both shots, you get a spare.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button
+                type="button"
+                id="clear"
+                class="btn btn-outline-light px-4 gap-3"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Table -->
+        <div class="tbl-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Frame</th>
+                <th scope="col">1st Shot</th>
+                <th scope="col">2nd Shot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Frame 1 -->
+              <tr>
+                <th scope="row">1</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm first"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 2 -->
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 3 -->
+              <tr>
+                <th scope="row">3</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 4 -->
+              <tr>
+                <th scope="row">4</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 5 -->
+              <tr>
+                <th scope="row">5</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 6 -->
+              <tr>
+                <th scope="row">6</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 7 -->
+              <tr>
+                <th scope="row">7</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 8 -->
+              <tr>
+                <th scope="row">8</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 9 -->
+              <tr>
+                <th scope="row">9</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+              <!-- Frame 10 -->
+              <tr>
+                <th scope="row">10</th>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">Strike</option>
+                  </select>
+                </td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="swing-score-select"
+                  >
+                    <option selected value="">-</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="S">Spare</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <th id="total" scope="col">Total</th>
+              <td scope="col" colspan="2" id="scoreTotal"></td>
+            </tfoot>
+          </table>
+        </div>
       </div>
-      <!-- Table -->
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Frame</th>
-            <th scope="col">Swing 1</th>
-            <th scope="col">Swing 2</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Frame 1 -->
-          <tr>
-            <th scope="row">1</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 2 -->
-          <tr>
-            <th scope="row">2</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 3 -->
-          <tr>
-            <th scope="row">3</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 4 -->
-          <tr>
-            <th scope="row">4</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 5 -->
-          <tr>
-            <th scope="row">5</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 6 -->
-          <tr>
-            <th scope="row">6</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 7 -->
-          <tr>
-            <th scope="row">7</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 8 -->
-          <tr>
-            <th scope="row">8</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 9 -->
-          <tr>
-            <th scope="row">9</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-          <!-- Frame 10 -->
-          <tr>
-            <th scope="row">10</th>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="X">Strike</option>
-              </select>
-            </td>
-            <td>
-              <select
-                class="form-select form-select-sm"
-                aria-label="swing-score-select"
-              >
-                <option selected value="">-</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="S">Spare</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <!-- <th id="total" scope="row">Total</th>
-          <td colspan="2" id="scoreTotal"></td> -->
-          <th id="total" scope="col">Total</th>
-          <td scope="col" id="scoreTotal"></td>
-        </tfoot>
-      </table>
-    </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <span class="text-muted"
+          >UX Challenge <i class="fas fa-bowling-ball"></i> built by Elvia
+          Franco <i class="fas fa-bowling-ball"></i> Sep 2021</span
+        >
+      </div>
+    </footer>
     <!-- jQuery library -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"

@@ -1,28 +1,22 @@
 @font-face {
     font-family: 'chaneyultra_extended';
     src: url('chaney-ultraextended-webfont.eot');
-    src: url('chaney-ultraextended-webfont.eot?#iefix') format('embedded-opentype'),
-         url('chaney-ultraextended-webfont.woff2') format('woff2'),
-         url('chaney-ultraextended-webfont.woff') format('woff'),
-         url('chaney-ultraextended-webfont.ttf') format('truetype');
+    src: url('chaney-ultraextended-webfont.eot?#iefix') format('embedded-opentype'), url('chaney-ultraextended-webfont.woff2') format('woff2'), url('chaney-ultraextended-webfont.woff') format('woff'), url('chaney-ultraextended-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
-body {
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, footer {
     font-family: 'Space Grotesk', sans-serif;
-    min-height:100%;
-    background:linear-gradient(0deg, rgba(28, 26, 38, 0.7), rgba(28, 26, 38, 0.7)), url('../images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
-    background-size:cover;
+    min-height: 100%;
+    background: linear-gradient(0deg, rgba(28, 26, 38, 0.7), rgba(28, 26, 38, 0.7)), url('../images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
+    background-size: cover;
     color: #04FFEF;
     text-align: center;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 .form-select {
@@ -31,7 +25,6 @@ body {
     border: 1px solid #04FFEF;
     padding: 1em;
     margin: 0;
-    /* width: 50%; */
     width: 100%;
     font-family: inherit;
     font-size: inherit;
@@ -42,14 +35,20 @@ body {
 .table {
     border-radius: 15px;
     background-color: #221F2E;
-    color:#04FFEF;
+    color: #04FFEF;
     border-color: #474451;
+    overflow: hidden;
 }
 
 thead {
     background-color: #5100FF;
     color: #04FFEF;
     text-align: center;
+}
+
+.tbl-container {
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 h1, #total {
@@ -69,7 +68,9 @@ i {
 #scoreTotal {
     font-family: 'chaneyultra_extended';
     color: #DDFF00;
-    float: right;
 }
 
-
+.btn {
+    background-color: #DDFF00;
+    color: #1C1A26;
+}
